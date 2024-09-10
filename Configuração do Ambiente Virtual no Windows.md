@@ -22,3 +22,7 @@ Agora, instale as dependências
 
 Para desativar o ambiente virtual quando terminar
 **deactivate**
+
+### Se você encontrar erros relacionados à política de execução, pode ser necessário alterar a política de execução do PowerShell. Você pode fazer isso executando:
+**Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser**
+Isso permitirá a execução de scripts locais.
