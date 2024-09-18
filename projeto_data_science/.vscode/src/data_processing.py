@@ -1,14 +1,8 @@
-import pandas as pd
+from audio_transcription import transcrever_audio
 
-def load_data(dados_transcribe.csv):
-    """
-    Carrega os dados de um arquivo CSV.
-    """
-    return pd.read_csv(dados_transcribe.csv)
+def processar_dados_audio(caminho_arquivo):
+    texto_transcrito = transcrever_audio(caminho_arquivo)
+    # Realize aqui qualquer processamento adicional no texto transcrito
+    return texto_transcrito
 
-def preprocess_data(df):
-    """
-    Realiza pré-processamento básico nos dados.
-    """
-    # Implementar lógica de pré-processamento aqui
-    return df
+# Resto do código de processamento de dados...
